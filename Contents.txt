@@ -1,0 +1,36 @@
+About Appium:
+===========
+Appium is an open source test automation framework, uses with native, hybrid and mobile web apps. It drives iOS, android and windows apps using webdriver protocol.
+
+About ADB:
+=========
+ADB - Android Debug Bridge its part of the Android SDK and is made up of three Components:
+	- Client
+	- Daemon
+	- Server
+It is used to amange either an emulator instance or an actual Android device
+
+Android Env Variables path:
+	- tools (c:\AndroidSDK\tools)
+	- platform-tools (c:\AndroidSDK\platform-tools)
+	- build-tools (c:\AndroidSDK\build-tools)
+baisc adb commands
+	- adb start-server (intreact with emulator and real device)
+	- adb kill-server (to kill the server)
+	- adb devices (to check if any devices is attached)
+
+For Error X86 emulation currently requires hardware acceleration
+==================================================
+Android studio - tools - sdk manager - sdk tools - enable Intel X86 emulator Accelerator (This would download the software in the below location)
+AndroidSDK folder - extras-intel-Hardware_Accelerated_Execution_Manager - Click install
+
+Appium Desired Capabilities
+	way to specify what device, platform, and versions
+To get the ap activity
+===============
+adb shell "dumpsys window windows | grep -E 'mCurrentFocus'"
+
+
+
+
+
